@@ -3,11 +3,12 @@ Plans Multiple Choice Pre-Test
 ================================
 
 
-.. timed:: pretest-mc_timed
-    :timelimit: 30
-    :nofeedback:
+.. timed:: plans-pretest
+    :noresult: 
+    :nofeedback: 
+    :notimer: 
 
-    .. mchoice:: pre1
+    .. mchoice:: select-describe
         :correct: b
 	:answer_a: Finds the first height greater than 30
 	:answer_b: Creates a list with only heights greater than 30
@@ -32,7 +33,7 @@ Plans Multiple Choice Pre-Test
 	What will be printed?
 
 
-    .. mchoice:: pre2
+    .. mchoice:: select-execute
         :correct: d
         :answer_a: [True, False, False, False, False]
         :answer_b: [n]
@@ -53,9 +54,109 @@ Plans Multiple Choice Pre-Test
 
 		print(aList)
 
+    .. mchoice:: select-fill
+	:correct: b
+	:answer_a: I
+	:answer_b: II
+	:answer_c: III
+	:answer_d: IV
+	:answer_e: V
+
+	Our goal is to create a new list with all the scores that are **higher than 80**. What code should fill in the blank?
+
+	    .. code-block:: python
+
+                scores = getHomeworkScores()
+                # MISSING CODE
+
+                    if s > 80:
+                        highScoreList.append(s)
+
+                print(highScoreList)
+
+	
+	**I.** 
+	    .. code-block:: python
+	
+                highScoreList = scores
+
+                for i in range(len(highScoreList)):
+			
+	**II.**
+	    .. code-block:: python
+
+                highScoreList = []
+
+                for s in scores:
+		
+
+	**III**
+	    .. code-block:: python
+
+                 highScoreList = []
+                 count = 0
+                 while(count == 0):
+                     if s > 80:
+                         count = count + 1
+            
+	**IV** 
+	    .. code-block:: python
+
+                    if s <= 80:
+                        scores.remove(s)
+		
+	**V**
+	    .. code-block:: python
+
+                highScoreList = scores
+
+                for s in highScoreList:
+
+    .. mchoice:: remove-describe
+        :correct: b
+	:answer_a: Prints the list of IDs
+	:answer_b: Deletes IDs containing the letter "i"
+	:answer_c: Removes the letter "z" from all the IDs in the list
+	:answer_d: Deletes all IDs containing "z" from the list
+	:answer_e: Checks if an ID contains a "z" in it
+
+	Choose the **BEST** description of the following code:
+	
+	    .. code-block:: python
+	    
+                ids = getIDs()
+
+                for i in range(len(ids)):
+                    if ids[i].contains(“z”):
+                        del ids[i]
+
+                print(ids)
 
 
-    .. mchoice:: pre3
+
+    .. mchoice:: remove-execute
+        :correct: a
+	:answer_a: [ ]
+	:answer_b: ["atie", "arthik", "evin", "amar"]
+	:answer_c: ["del", "del", "del", "del"]
+	:answer_d: [5, 7, 5, 5]
+	:answer_e: ["Katie", "Karthik", "Kevin", "Kamar"]
+
+	If **getStudentNames()** collects an input of ["Katie", "Karthik", "Kevin", "Kamar"], what is printed by the code below?
+
+	.. code-block:: python
+
+	    names = getStudentNames()
+	    
+	    for i in range(len(names)):
+		if names[i].startswith("K"):
+		    del names[i]
+
+	    print(names)
+
+
+
+    .. mchoice:: remove-fill
 	:correct: c
 	:answer_a: I
 	:answer_b: II
@@ -103,28 +204,9 @@ Plans Multiple Choice Pre-Test
 
 
 
-    .. mchoice:: pre4
-        :correct: a
-	:answer_a: [ ]
-	:answer_b: ["atie", "arthik", "evin", "amar"]
-	:answer_c: ["del", "del", "del", "del"]
-	:answer_d: [5, 7, 5, 5]
-	:answer_e: ["Katie", "Karthik", "Kevin", "Kamar"]
-
-	If **getStudentNames()** collects an input of ["Katie", "Karthik", "Kevin", "Kamar"], what is printed by the code below?
-
-	.. code-block:: python
-
-	    names = getStudentNames()
-	    
-	    for i in range(len(names)):
-		if names[i].startswith("K"):
-		    del names[i]
-
-	    print(names)
 
 
-    .. mchoice:: pre5
+    .. mchoice:: find-describe
         :correct: a
 	:answer_a: Determine if there is a dog shorter than 10
 	:answer_b: Creates a list with only heights greater than 10
@@ -148,7 +230,7 @@ Plans Multiple Choice Pre-Test
 
 
 
-    .. mchoice:: pre6
+    .. mchoice:: find-execute
         :correct: c
 	:answer_a: foundShortName
 	:answer_b: [false, false, false]
@@ -169,10 +251,59 @@ Plans Multiple Choice Pre-Test
 
 		print(foundShortName)
 
+    .. mchoice:: find-fill
+	:correct: c
+	:answer_a: I
+	:answer_b: II
+	:answer_c: III
+	:answer_d: IV
+	:answer_e: V
 
+	Our goal is to determine if there is a score in the list that is equal to 100. What code should fill in the blank?
 
+	    .. code-block:: python
 
-When you are finished answering all of the questions, click the **Finish Exam** button.
+                scores = getFinalExamScores()
+                found100 = false
+		
+	        ## MISSING CODE
 
+		print(found100)
 
+	
+	**I.** 
+	    .. code-block:: python
+	
+                for s in scores:
+                    if s != 100:
+                        found100 = false
+		
+	
+	**II.**
+	    .. code-block:: python
+
+                for s in scores:
+                    if s == 100:
+                        found100 = true
+
+	**III**
+	    .. code-block:: python
+
+                for i in range(len(scores)):
+                    if i == 100:
+                        found100 = true
+
+	**IV** 
+	    .. code-block:: python
+
+                for s in scores:
+                    s = 100
+                    found100 = true
+
+	**V**
+	    .. code-block:: python
+
+                while (scores != 100):
+                    if (scores == 100):
+                        found100 = true
 
