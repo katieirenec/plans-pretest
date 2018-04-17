@@ -3,7 +3,8 @@ Reflection Survey
 =======================================
 
 .. shortanswer:: how_difficult
-    On a scale of 1-5 (1 being very difficult, and 5 being very easy), How difficult do you think this test was?
+
+    On a scale of 1-5 (1 being very easy, and 5 being very difficult), how difficult do you think this test was?
 
 
 .. shortanswer:: other_feedback
