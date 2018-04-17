@@ -4,7 +4,6 @@ Plans Multiple Choice Pre-Test
 
 
 .. timed:: plans-pretest
-    :noresult: 
     :nofeedback: 
     :notimer: 
 
