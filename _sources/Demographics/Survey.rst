@@ -8,7 +8,6 @@ Reflection Survey
 
 
 .. shortanswer:: other_feedback
-   :optional:
 
    What other feedback do you have about the questions on the test?
 
@@ -16,13 +15,11 @@ Reflection Survey
 The next few questions are about any programming experience you might have besides CS 1315.
 
 .. shortanswer:: formal_experience
-    :optional:
 
     Have you taken a formal programming class besides CS 1315, such as AP Computer Science, CS 1301, or a bioinformatics class? If yes, describe the course below. If not, leave blank.
 
 
 .. shortanswer:: formal_experience
-    :optional:
 
     Do you have any other coding experience such as coding activities, Girls Who Code, learning from a friend/family member, or a research project that required coding? If yes, describe the experience below. If not, leave blank.
 
