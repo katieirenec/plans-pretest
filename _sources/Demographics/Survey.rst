@@ -2,21 +2,8 @@
 Reflection Survey
 =======================================
 
-
-.. poll:: how_many_right
-    :scale: 9
-
-    How many problems do you think you got right on this test? (There were 9 questions)
-
-
-.. poll:: how_difficult
-    :option_1: Very difficult 
-    :option_2: Somewhat difficult
-    :option_3: Neither difficult nor easy
-    :option_4: Somewhat easy
-    :option_5: Very easy
-
-    How difficult do you think this test was?
+.. shortanswer:: how_difficult
+    On a scale of 1-5 (1 being very difficult, and 5 being very easy), How difficult do you think this test was?
 
 
 .. shortanswer:: other_feedback
@@ -27,39 +14,16 @@ Reflection Survey
 
 The next few questions are about any programming experience you might have besides CS 1315.
 
-.. poll:: formal_experience
-    :option_1: yes 
-    :option_2: no
-
-    Have you taken a formal programming class besides CS 1315, such as AP Computer Science, CS 1301, or a bioinformatics class?
-
-.. shortanswer:: formal_desc
+.. shortanswer:: formal_experience
     :optional:
 
-    If yes, give the name of the course(s).
+    Have you taken a formal programming class besides CS 1315, such as AP Computer Science, CS 1301, or a bioinformatics class? If yes, describe the course below. If not, leave blank.
 
-.. poll:: formal_experience
-    :option_1: yes 
-    :option_2: no
 
-    Have you participated in informal coding activities, such as Girls Who Code, or a research project that required coding?
+.. shortanswer:: formal_experience
+    :optional:
 
-.. shortanswer:: informal_desc
-   :optional:
-
-    If yes, name the experience.
-
-.. poll:: formal_experience
-    :option_1: yes 
-    :option_2: no
-
-    Have you had any other coding experience besides CS 1315 not described above, such as learning coding from a friend or family member?
-
-.. shortanswer:: informal_desc
-   :optional:
-
-    If yes, name the experience.
-
+    Do you have any other coding experience such as coding activities, Girls Who Code, learning from a friend/family member, or a research project that required coding? If yes, describe the experience below. If not, leave blank.
 
 
 You're done!
